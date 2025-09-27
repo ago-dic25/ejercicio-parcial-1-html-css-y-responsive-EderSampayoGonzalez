@@ -76,6 +76,24 @@
 
 
 @media screen and (min-width: 1024px){
+    .grid2{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 8px;
+        row-gap: 8px;
+    }
+
+    .texto{
+        grid-column: span 4;
+    }
+
+    .imgintro{
+        grid-column: span 2;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
     .grid .tarjeta1{
         grid-column: span 4;
     }
