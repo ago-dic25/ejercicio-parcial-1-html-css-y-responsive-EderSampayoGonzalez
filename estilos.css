@@ -1,1 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 
+.roboto{
+  font-family: 'Roboto', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.header{
+    text-align: center;
+    background-color: rgb(140, 183, 221);
+}
+
+.main{
+    background-color: antiquewhite;
+}
+
+.footer{
+    background-color: azure;
+}
+
+.logo{
+    width: 30px;
+}
+
+.imgintro{
+    width: 70%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+    row-gap: 8px;
+}
+
+.grid > div{
+    padding: 9px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px gray;
+}
+
+.grid .tarjeta1{
+    grid-column: span 12;
+    background-color: aquamarine;
+}
+
+.grid .tarjeta2{
+    grid-column: span 12;
+    background-color: blue;
+}
+
+.grid .tarjeta3{
+    grid-column: span 12;
+    background-color: brown;
+}
+
+@media screen and (min-width: 768px){
+    .grid .tarjeta1{
+        grid-column: span 6;
+    }
+
+    .grid .tarjeta2{
+        grid-column: span 6;
+    }
+
+    .grid .tarjeta3{
+        grid-column: span 6;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px){
+    .grid .tarjeta1{
+        grid-column: span 4;
+    }
+
+    .grid .tarjeta2{
+        grid-column: span 4;
+    }
+
+    .grid .tarjeta3{
+        grid-column: span 4;
+    }
+
+}
